@@ -1,0 +1,30 @@
+.topbar {
+  height: 70px;
+  border-bottom: 1px solid #006238;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.topbar-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.topbar-left img {
+  height: 35px;
+  width: 35px;
+}
+
+.topbar-left h2 {
+  color: #006238;
+  font-weight: 500;
+  font-size: 30px;
+}
+
+.topbar-right img {
+  height: 35px;
+  width: 35px;
+  cursor: pointer;
+}

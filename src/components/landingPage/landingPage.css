@@ -1,0 +1,42 @@
+.landing-page {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 80px;
+}
+
+.home-image {
+  height: 500px;
+  width: 350px;
+}
+
+.home-image img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  color: #006238;
+}
+
+.right h2 {
+  font-size: 45px;
+  font-weight: 400;
+}
+
+.right button {
+  cursor: pointer;
+  min-width: 30%;
+  padding: 7px 20px;
+  font-size: 17px;
+  border-radius: 7px;
+  color: #006238;
+  font-weight: 500;
+  border: 2px solid #006238;
+}

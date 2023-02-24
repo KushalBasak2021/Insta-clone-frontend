@@ -1,0 +1,49 @@
+.post-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form {
+  margin: 0 auto;
+  margin-top: 50px;
+  padding: 20px;
+  border: 1px solid #707070;
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.form input {
+  padding: 2px 5px;
+  outline: none;
+}
+
+.image-input {
+  width: 100%;
+  display: flex;
+}
+
+.file-path {
+  flex: 8;
+}
+
+.author-location {
+  display: flex;
+  justify-content: space-between;
+}
+
+.author-location input {
+  width: 45%;
+}
+
+.post-button {
+  min-width: 50px;
+  align-self: center;
+  padding: 3px 20px;
+  cursor: pointer;
+  background-color: #347dfd;
+  color: #fff;
+  border: 1px solid #347dfd;
+  border-radius: 2px;
+}
