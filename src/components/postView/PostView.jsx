@@ -9,7 +9,9 @@ const PostView = () => {
 
   useEffect(() => {
     const getAllPosts = async () => {
-      const posts = await axios.get("http://localhost:5000/api/post");
+      const posts = await axios.get(
+        "https://insta-clone-backend-taq7.onrender.com/api/post"
+      );
       setAllPosts(posts.data);
     };
     getAllPosts();

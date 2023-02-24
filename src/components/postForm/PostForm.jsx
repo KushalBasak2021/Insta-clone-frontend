@@ -72,7 +72,10 @@ const PostForm = () => {
           console.log(newPost);
           const postBlog = async () => {
             try {
-              await axios.post("http://localhost:5000/api/post", newPost);
+              await axios.post(
+                "https://insta-clone-backend-taq7.onrender.com/api/post",
+                newPost
+              );
               setIsPosting(false);
               window.location.replace(`/post-view`);
             } catch (err) {
