@@ -77,7 +77,7 @@ const PostForm = () => {
                 newPost
               );
               setIsPosting(false);
-              window.location.replace(`/post-view`);
+              window.location.replace("/");
             } catch (err) {
               console.log(err);
             }
