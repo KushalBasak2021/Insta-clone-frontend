@@ -6,3 +6,11 @@
   align-items: center;
   gap: 50px;
 }
+
+.loader {
+  width: 100%;
+  min-height: calc(100vh-69px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
