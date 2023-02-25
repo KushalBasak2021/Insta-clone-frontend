@@ -9,6 +9,7 @@ import {
 } from "firebase/storage";
 import app from "../../firebase";
 import axios from "axios";
+import { useNavigate } from "react-router-dom";
 
 const PostForm = () => {
   const [isPosting, setIsPosting] = useState(false);
@@ -16,6 +17,7 @@ const PostForm = () => {
   const [inputFile, setInputFile] = useState(null);
   const [filePath, setFilePath] = useState("");
   const fileInputRef = useRef(null);
+  const navigate = useNavigate();
 
   const handleChange = (e) => {
     setInputs((prev) => {
@@ -77,7 +79,7 @@ const PostForm = () => {
                 newPost
               );
               setIsPosting(false);
-              window.location.replace("/");
+              navigate("/post-view");
             } catch (err) {
               console.log(err);
             }
